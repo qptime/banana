@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         自动点击脚本
+// @name         banana自动点击脚本
 // @namespace    https://github.com/qptime/banana/
 // @version      1.0
-// @description  自动点击指定元素
+// @description  banana自动点击脚本
 // @author       qptime
 // @match        https://banana.carv.io/*
 // @icon         https://pbs.twimg.com/profile_images/1815713398979690496/nj0Z0Jns_400x400.jpg
