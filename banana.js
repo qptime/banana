@@ -5,7 +5,21 @@
 // @description  自动点击指定元素
 // @author       qptime
 // @match        https://banana.carv.io/*
-// @grant        none
+// @noframes
+// @icon         https://pbs.twimg.com/profile_images/1815713398979690496/nj0Z0Jns_400x400.jpg
+// @downloadURL  https://raw.githubusercontent.com/qptime/banana/main/banana.js
+// @updateURL    https://raw.githubusercontent.com/qptime/banana/main/banana.js
+// @homepage     https://github.com/qptime
+// ==/UserScript==
+
+// 您的脚本内容...
+```
+
+如果您的脚本确实是为了在iframe中运行的，那么现有的设置可能已经是正确的。但如果您的意图是让脚本在主页面执行，那么您需要确保元数据块正确配置，而不是专门针对iframe。
+
+如果您已经确认了元数据块是正确的，但脚本仍然显示为“仅在frame中执行”，那么可能是脚本的某些逻辑导致它只在iframe中运行。此时，您可能需要检查脚本的代码，确保它不是专门查询或操作iframe中的元素。
+
+如果您需要更具体的帮助，请提供更多关于您的脚本的信息，包括元数据块和任何相关的代码片段。这样我可以提供更精确的指导。
 // ==/UserScript==
 
 (function() {
