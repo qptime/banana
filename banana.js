@@ -11,8 +11,6 @@
 // @homepage     https://github.com/qptime
 // ==/UserScript==
 
-// 您的脚本内容...
-
 (function() {
     'use strict';
 
@@ -22,13 +20,28 @@
     // 要点击的元素选择器
     const selector = '.progress-container'; // 替换成你需要点击的元素的CSS选择器
 
+    // 定义一个函数来模拟点击事件
+    function simulateClick(element) {
+        const event = new MouseEvent('click', {
+            bubbles: true,
+            cancelable: true,
+            view: window
+        });
+        element.dispatchEvent(event);
+        console.log('Element clicked via simulateClick!');
+    }
+
     // 定义自动点击函数
     function autoClick() {
         const element = document.querySelector(selector);
-        if (element) {
+        if (element && typeof element.click === 'function') {
             element.click();
             console.log('Element clicked!');
-        } 
+        } else if (element) {
+            simulateClick(element);
+        } else {
+            console.log('Element not found for selector:', selector);
+        }
     }
 
     // 设置定时器，按指定的时间间隔自动点击
