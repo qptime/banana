@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         banana自动点击脚本
 // @namespace    https://github.com/qptime/banana/
-// @version      1.0
+// @version      1.1
 // @description  banana自动点击脚本
 // @author       qptime
 // @match        https://banana.carv.io/*
@@ -15,10 +15,15 @@
     'use strict';
 
     // 自动点击的时间间隔（以毫秒为单位）
-    const interval = 1000; // 每秒点击一次
+    const interval = 100; // 每秒点击10次
 
     // 要点击的元素选择器
     const selector = '.progress-container'; // 替换成你需要点击的元素的CSS选择器
+
+    // 点击次数计数器
+    let clickCount = 0;
+    // 最大点击次数
+    const maxClicks = 1000;
 
     // 定义一个函数来模拟点击事件
     function simulateClick(element) {
@@ -33,6 +38,12 @@
 
     // 定义自动点击函数
     function autoClick() {
+        if (clickCount >= maxClicks) {
+            clearInterval(clickInterval);
+            console.log(`Reached the maximum of ${maxClicks} clicks.`);
+            return;
+        }
+
         const element = document.querySelector(selector);
         if (element && typeof element.click === 'function') {
             element.click();
@@ -42,6 +53,9 @@
         } else {
             console.log('Element not found for selector:', selector);
         }
+
+        clickCount++;
+        console.log(`Click count: ${clickCount}`);
     }
 
     // 设置定时器，按指定的时间间隔自动点击
