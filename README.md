@@ -1,2 +1,2 @@
 # banana
-test
+auto click for ccarv banana telegram game
