@@ -5,7 +5,6 @@
 // @description  自动点击指定元素
 // @author       qptime
 // @match        https://banana.carv.io/*
-// @noframes
 // @icon         https://pbs.twimg.com/profile_images/1815713398979690496/nj0Z0Jns_400x400.jpg
 // @downloadURL  https://raw.githubusercontent.com/qptime/banana/main/banana.js
 // @updateURL    https://raw.githubusercontent.com/qptime/banana/main/banana.js
