@@ -1,2 +1,2 @@
 # banana
-auto click for ccarv banana telegram game
+auto click for carv banana telegram game
