@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         banana自动点击脚本
 // @namespace    https://github.com/qptime/banana/
-// @version      1.1
+// @version      1.2
 // @description  banana自动点击脚本
 // @author       qptime
 // @match        https://banana.carv.io/*
