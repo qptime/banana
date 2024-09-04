@@ -15,7 +15,7 @@
     'use strict';
 
     // 自动点击的时间间隔（以毫秒为单位）
-    const interval = 100; // 每秒点击10次
+    const interval = 30; // 每秒点击30次
 
     // 要点击的元素选择器
     const selector = '.progress-container'; // 替换成你需要点击的元素的CSS选择器
